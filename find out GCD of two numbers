@@ -1,0 +1,21 @@
+//Find out GCM of two numbers
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	int s = sc.nextInt();
+	int s1 = sc.nextInt();
+	
+	//Rule
+	//gcm=multiply two numbers/lcm
+	
+	int gcd=0;
+	for(int i=1;i<=Math.max(s,s1);i++){
+	if(s%i==0 && s1%i==0){
+	  gcd=i;  
+	}    
+	}
+	System.out.println(gcd);
+	}
+}
