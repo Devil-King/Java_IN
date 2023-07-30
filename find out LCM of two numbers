@@ -1,1 +1,28 @@
+//Find out LCM of two numbers
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	int s = sc.nextInt();
+	int s1 = sc.nextInt();
+	//24,36
+	//12,18 -- 2
+	//6,9 -- 2
+	//2,3 -- 3
+	//2*2*3*2*3=72
+	//LCM=72
+	
+	//Rule
+	//lcm=multiply two numbers/gcm
+	
+	int gcd=0;
+	for(int i=1;i<=Math.max(s,s1);i++){
+	if(s%i==0 && s1%i==0){
+	  gcd=i;  
+	}    
+	}
+	System.out.println((s*s1)/gcd);
+	}
+}
 
