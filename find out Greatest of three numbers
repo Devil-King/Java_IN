@@ -1,0 +1,26 @@
+ //find out Greatest of three numbers
+import java.util.Scanner;
+public class Main
+{
+    public static void ThreeNum(int a,int b,int c){
+        int s=0;
+    if(a>c && a>b){
+    s=a;    
+    }    
+    else if(b>c && b>a){
+    s=b;    
+    }    
+    else if(c>a && c>b){
+    s=c;    
+    } 
+    System.out.println(s+" Number is Greatest(Larger) Number");
+    }
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int A=sc.nextInt();
+	    int B=sc.nextInt();
+	    int C=sc.nextInt();
+	   ThreeNum(A,B,C);
+	
+	}
+}
