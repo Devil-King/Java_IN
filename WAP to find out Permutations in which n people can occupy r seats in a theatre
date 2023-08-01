@@ -1,0 +1,34 @@
+// Write a code to find all the possible permutations in which N people can occupy R number of seats in a classroom
+// N students are looking to find R seats in a classroom.
+//Some of the seats are already occupied and only a few can be accommodated in the classroom. 
+//The available seats are assumed as R and N number of people are looking to accommodate within the room.
+
+// Hint :
+// nPr = n! / (n-r)!
+
+// Example
+// Input:
+// Enter the num of people: 9
+// Enter the number of seats available: 5
+
+// Output:
+// Num of ways people can be seated: 15120
+
+
+import java.util.Scanner;
+public class Main
+{
+   public static int Fact(int n){
+       int fact=1;
+     for(int i=1;i<=n;i++){
+       fact=fact*i;  
+     } 
+     return fact;
+    }
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int num1=sc.nextInt();
+	int num2=sc.nextInt();
+	System.out.println(Fact(num1)/Fact(num1-num2));
+	}
+}
